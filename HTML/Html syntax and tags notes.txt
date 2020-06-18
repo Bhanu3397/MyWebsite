@@ -1,0 +1,58 @@
+Reference:- "https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics"
+Attributes:- Attributes contain extra information about the element that you don't want to appear in the actual content.
+Here, class is the attribute name and "editor-note" is the attribute value. 
+The class attribute allows you to give the element an identifier that can be used later to target the element with style information and other things.
+
+""<p class = "editor-note"> "My cat is very grumpy"</p>""
+
+Divs:- One of the most popular elements in HTML is the <div> element. <div> is short for “division” or a container that divides the page into sections. 
+These sections are very useful for grouping elements in your HTML together.
+
+Paragraphs (<p>) contain a block of plain text.
+<span> contains short pieces of text or other HTML. They are used to separate small pieces of content that are on the same line as other content.
+
+The <em> tag will generally render as italic emphasis.
+The <strong> will generally render as bold emphasis.
+
+Unordered Lists:-
+In addition to organizing text in paragraph form, you can also display content in an easy-to-read list.
+
+In HTML, you can use an unordered list tag (<ul>) to create a list of items in no particular order. An unordered list outlines individual list items with a bullet point.
+
+The <ul> element should not hold raw text and won’t automatically format raw text into an unordered list of items. Individual list items must be added to the unordered list using the <li> tag. The <li> or list item tag is used to describe an item in a list.
+
+Ordered Lists:-
+Ordered lists (<ol>) are like unordered lists, except that each list item is numbered. They are useful when you need to list different steps in a process or rank items for first to last.
+
+You can create the ordered list with the <ol> tag and then add individual list items to the list using <li> tags.
+
+Images:-
+The <img> tag allows you to add an image to a web page. Most elements require both opening and closing tags, but the <img> tag is a self-closing tag. 
+Note that the end of the <img> tag has a forward slash /. Self-closing tags may include or omit the final slash — both will render properly.
+
+Image Alts:- 
+Part of being an exceptional web developer is making your site accessible to users of all backgrounds. 
+In order to make the Web more inclusive, 
+we need to consider what happens when assistive technologies such as screen readers come across image tags.
+The alt attribute, which means alternative text, brings meaning to the images on our sites. 
+The alt attribute can be added to the image tag just like the src attribute. 
+The value of alt should be a description of the image.
+
+Videos:-
+In addition to images, HTML also supports displaying videos. Like the <img> tag, the <video> tag requires a src attribute with a link to the video source. 
+Unlike the <img> tag however, the <video> element requires an opening and a closing tag.
+
+Head:-
+The <head> element contains the metadata for a web page. Metadata is information about the page that isn’t displayed directly on the web page.
+A browser’s tab displays the title specified in the <title> tag. The <title> tag is always inside of the <head>.
+
+Linking to Other Web Pages
+One of the powerful aspects of HTML (and the Internet), is the ability to link to other web pages.
+
+Linking At Will:-
+Thankfully, HTML allows you to turn nearly any element into a link by wrapping that element with an anchor element. With this technique, 
+it’s possible to turn images into links by simply wrapping the <img> element with an <a> element.
+
+Linking to Same Page:-
+When users visit our site, we want them to be able to click a link and have the page automatically scroll to a specific section.
+An id is especially helpful for organizing content belonging to a div!
