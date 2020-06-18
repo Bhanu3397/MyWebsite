@@ -1,3 +1,4 @@
+Please Download to view the exact content and view in VSCode
 https://www.youtube.com/watch?time_continue=334&v=uxmB8MlO3m8&feature=emb_logo :- Structure
 https://www.youtube.com/watch?time_continue=208&v=B4tCt6elrU0&feature=emb_title :- Doc standards
 If you want to display text in HTML, you can use a paragraph or span:

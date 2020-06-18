@@ -1,3 +1,4 @@
+Please Download to view the exact content and view in VSCode
 Introduction to Semantic HTML
 When building web pages, we use a combination of non-semantic HTML and Semantic HTML. The word semantic means “relating to meaning,” so semantic elements provide information about the content between the opening and closing tags.
 
