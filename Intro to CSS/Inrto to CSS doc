@@ -1,0 +1,118 @@
+Inline Styles:-it’s possible to write CSS code directly within HTML code using inline styles.
+To style an HTML element, you can add the style attribute directly to the opening tag. 
+After you add the attribute, you can set it equal to the CSS style(s) you’d like applied to that element.
+Example:- 
+<p style="color: red;">I'm learning to code!</p>
+<p style="color: red; font-size: 20px;">I'm learning to code!</p>
+
+The <style> Tag:-HTML allows you to write CSS code in its own dedicated section with the <style> element. 
+CSS can be written between opening and closing <style> tags. 
+To use the <style> element, it must be placed inside of the <head> element.
+
+The .css file:-You can create a CSS file by using the .css file name extension, like so: style.css
+With a CSS file, you can write all the CSS code needed to style a page without sacrificing the readability and maintainability of your HTML file.
+
+Linking the CSS File:-When HTML and CSS code are in separate files, the files must be linked. Otherwise, the HTML file won’t be able to locate the CSS code, and the styling will not be applied.
+Example:- <link href="https://www.codecademy.com/stylesheets/style.css" type="text/css" rel="stylesheet">
+
+Tag Name:- CSS can select HTML elements by using an element’s tag name. A tag name is the word (or character) between HTML angle brackets.
+
+Class Name:-CSS is not limited to selecting elements by tag name. HTML elements can have more than just a tag name; they can also have attributes. One common attribute is the class attribute. 
+It’s also possible to select an element by its class attribute.
+.title{
+  color: teal;
+}
+Multiple Classes:-Luckily, it’s possible to add more than one class name to an HTML element’s class attribute.
+For instance, perhaps there’s a heading element that needs to be green and bold. You could write two CSS rules like so:
+Example:-
+.green {
+  color: green;
+}
+.bold {
+  font-weight: bold;
+}
+then call it in the inline
+Example:- <h1 class="green bold"> ... </h1>
+
+ID Name:-If an HTML element needs to be styled uniquely (no matter what classes are applied to the element), we can add an ID to the element.
+Example:-   <h1 class="title uppercase" id="article-title">Top Vacation Spots</h1>
+Example:- In css
+#article-title{
+  font-family: cursive;
+  text-transform: capitalize;
+}
+
+Classes and IDs:-CSS can select HTML elements by their tag, class, and ID. 
+CSS classes and IDs have different purposes, which can affect which one you use to style HTML elements.
+CSS classes are meant to be reused over many elements. 
+By writing CSS classes, you can style elements in a variety of ways by mixing classes on HTML elements.
+
+Specificity:-Specificity is the order by which the browser decides which CSS styles will be displayed. 
+A best practice in CSS is to style elements while using the lowest degree of specificity, so that if an element needs a new style, it is easy to override.
+IDs are the most specific selector in CSS, followed by classes, and finally, tags.
+the class selector is more specific than the tag selector. If an ID attribute (and selector) were added to the code above, the styles within the ID selector’s body would override all other styles for the heading. 
+The only way to override an ID is to add another ID with additional styling.
+
+Chaining Selectors:-When writing CSS rules, it’s possible to require an HTML element to have two or more CSS selectors at the same time.
+This is done by combining multiple selectors, which we will refer to as chaining
+Example:-
+h1.special {
+}
+
+Nested Elements:-In addition to chaining selectors to select elements, CSS also supports selecting elements that are nested within other HTML elements.
+Example:- 
+<ul class='main-list'>
+  <li> ... </li>
+  <li> ... </li>
+  <li> ... </li>
+</ul>
+
+.main-list li {
+
+}
+
+Chaining and Specificity:-In the last exercise, instead of selecting all h5 elements, you selected only the h5 elements nested inside the .description elements. 
+This CSS selector was more specific than writing only h5. 
+Adding more than one tag, class, or ID to a CSS selector increases the specificity of the CSS selector.
+
+Important:-There is one thing that is even more specific than IDs: !important. !important can be applied to specific attributes instead of full rules. It will override any style no matter how specific it is.
+As a result, it should almost never be used. Once !important is used, it is very hard to override.
+Example:-
+p {
+  color: blue !important;
+}
+.main p {
+  color: red;
+}
+
+Multiple Selectors:-In order to make CSS more concise, it’s possible to add CSS styles to multiple CSS selectors all at once. This prevents writing repetitive code.
+Example:-
+h1 {
+  font-family: Georgia;
+}
+.menu {
+  font-family: Georgia;
+}
+Ans:-
+h1, 
+.menu {
+  font-family: Georgia;
+}
+
+Review CSS Selectors
+Throughout this lesson, you learned how to select HTML elements with CSS and apply styles to them. Let’s review what you learned:
+
+CSS can change the look of HTML elements. In order to do this, CSS must select HTML elements, then apply styles to them.
+CSS can select HTML elements by tag, class, or ID.
+Multiple CSS classes can be applied to one HTML element.
+Classes can be reusable, while IDs can only be used once.
+IDs are more specific than classes, and classes are more specific than tags. That means IDs will override any styles from a class, and classes will override any styles from a tag selector.
+Multiple selectors can be chained together to select an element. This raises the specificity, but can be necessary.
+Nested elements can be selected by separating selectors with a space.
+The !important flag will override any style, however it should almost never be used, as it is extremely difficult to override.
+Multiple unrelated selectors can receive the same styles by separating the selector names with commas.
+
+Question:-The following HTML code attempts to use inline styling to change the color of the paragraph text, but fails to do so. Why?
+<p color="red;">I am learning to code!</p>
+Ans:-
+The color attribute is invalid. It should be changed to style and then set equal to color: red;: <p style="color:red;">.

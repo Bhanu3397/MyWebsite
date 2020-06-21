@@ -1,0 +1,60 @@
+In this lesson, you’ll learn the basic structure and syntax of CSS so that you can start styling web page elements.
+
+CSS Structure:-To style an HTML element using CSS, you need to write a CSS declaration inside the body of a CSS selector.
+
+Font Family:-
+The font specified in a stylesheet must be installed on a user’s computer in order for that font to display when a user visits the web page.
+The default typeface for all HTML elements is Times New Roman. You may be familiar with this typeface if you have ever used a formatted word processor. 
+If no font-family attribute is defined, the page will appear in Times New Roman.
+It’s a good practice to limit the number of typefaces used on a web page to 2 or 3. This helps the page load faster in some cases and is usually a good design decision.
+When the name of a typeface consists of more than one word, it’s a best practice to enclose the typeface’s name in quotes, like so:
+h1 {
+  font-family: "Courier New";
+}
+
+Font Size:- Often times, different sections of a web page are highlighted by modifying the font size.
+To change the size of text on your web page, you can use the font-size property.
+
+Font Weight:-In CSS, the font-weight property controls how bold or thin text appears.
+The font-weight property has a another value: normal. Why does it exist?
+If we wanted all text on a web page to appear bolded, we could select all text elements and change their font weight to bold. 
+If a certain section of text was required to appear normal, however, we could set the font weight of that particular element to normal, essentially shutting off bold for that element.
+
+Text Align:-No matter how much styling is applied to text (typeface, size, weight, etc.), text always appears on the left side of the browser.
+To align text we can use the text-align property. The text-align property will align text to the element that holds it, otherwise known as its parent.
+The text-align property can be set to one of the following three values:
+left — aligns text to the left hand side of its parent element, which in this case is the browser.
+center — centers text inside of its parent element.
+right — aligns text to the right hand side of its parent element.
+
+Color:-Before discussing the specifics of color, it’s important to make two distinctions about color. Color can affect the following design aspects:
+Foreground color
+Background color
+Foreground color is the color that an element appears in. For example, when a heading is styled to appear green, the foreground color of the heading has been styled.
+Conversely, when a heading is styled so that its background appears yellow, the background color of the heading has been styled.
+In CSS, these two design aspects can be styled with the following two properties:
+color: this property styles an element’s foreground color
+background-color: this property styles an element’s background color
+
+Opacity:-Opacity is the measure of how transparent an element is. 
+It’s measured from 0 to 1, with 1 representing 100%, or fully visible and opaque, and 0 representing 0%, or fully invisible.
+
+Background Image:-CSS has the ability to change the background of an element. One option is to make the background of an element an image. This is done through the CSS property background-image. Its syntax looks like this:
+.main-banner {
+  background-image: url("https://www.example.com/image.jpg");
+}
+.main-banner {
+  background-image: url("images/mountains.jpg");
+}
+
+Review Visual Rules
+Incredible work! You used CSS to alter text and images throughout a website. Throughout this lesson, you learned concepts including:
+
+CSS declarations are structured into property and value pairs.
+The font-family property defines the typeface of an element.
+font-size controls the size of text displayed.
+font-weight defines how thin or thick text is displayed.
+The text-align property places text in the left, right, or center of its parent container.
+Text can have two different color attributes: color and background-color. color defines the color of the text, while background-color defines the color behind the text.
+CSS can make an element transparent with the opacity property.
+CSS can also set the background of an element to an image with the background-image property.
