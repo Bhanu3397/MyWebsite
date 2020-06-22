@@ -1,0 +1,154 @@
+Console:-The console is a panel that displays important messages, like errors, for developers. 
+Much of the work the computer does with our code is invisible to us by default. 
+If we want to see things appear on our screen, we can print, or log, to our console directly.
+In JavaScript, the console keyword refers to an object, a collection of data and actions, that we can use in our code. 
+Keywords are words that are built into the JavaScript language, so the computer will recognize them and treats them specially.
+One action, or method, that is built into the console object is the .log() method. When we write console.log() what we put inside the parentheses will get printed, or logged, to the console.
+
+Example:- console.log(5); 
+
+Comments:-
+There are two types of code comments in JavaScript:
+A single line comment will comment out a single line and is denoted with two forward slashes // preceding it.
+
+// Prints 5 to the console
+console.log(5);
+You can also use a single line comment to comment after a line of code:
+
+console.log(5);  // Prints 5 
+A multi-line comment will comment out multiple lines and is denoted with /* to begin the comment, and */ to end the comment.
+/*
+This is all commented 
+console.log(10);
+None of this is going to run!
+console.log(99);
+*/
+You can also use this syntax to comment something out in the middle of a line of code:
+console.log(/*IGNORED!*/ 5);  // Still just prints 5 
+
+Data Types:-
+Data types are the classifications we give to the different kinds of data that we use in programming. In JavaScript, there are seven fundamental data types:
+Number: Any number, including numbers with decimals: 4, 8, 1516, 23.42.
+String: Any grouping of characters on your keyboard (letters, numbers, spaces, symbols, etc.) surrounded by single quotes: ' ... ' or double quotes " ... ". Though we prefer single quotes. Some people like to think of string as a fancy word for text.
+Boolean: This data type only has two possible values— either true or false (without quotes). It’s helpful to think of booleans as on and off switches or as the answers to a “yes” or “no” question.
+Null: This data type represents the intentional absence of a value, and is represented by the keyword null (without quotes).
+Undefined: This data type is denoted by the keyword undefined (without quotes). It also represents the absence of a value though it has a different use than null.
+Symbol: A newer feature to the language, symbols are unique identifiers, useful in more complex coding. No need to worry about these for now.
+Object: Collections of related data.
+The first 6 of those types are considered primitive data types. They are the most basic data types in the language. Objects are more complex, and you’ll learn much more about them as you progress through JavaScript. 
+At first, seven types may not seem like that many, but soon you’ll observe the world opens with possibilities once you start leveraging each one. As you learn more about objects, you’ll be able to create complex collections of data.
+
+Arithmetic Operators:-
+Add: +
+Subtract: -
+Multiply: *
+Divide: /
+Remainder: %
+
+String Concatenation:- adds two strings together
+
+Properties:-When you introduce a new piece of data into a JavaScript program, the browser saves it as an instance of the data type.
+Every string instance has a property called length that stores the number of characters in that string. 
+You can retrieve property information by appending the string with a period and the property name:
+
+console.log('Hello'.length); // Prints 5
+The . is another operator! We call it the dot operator.
+
+Methods:-
+Remember that methods are actions we can perform. JavaScript provides a number of string methods.
+We call, or use, these methods by appending an instance with:
+a period (the dot operator)
+the name of the method
+opening and closing parentheses
+
+Built-in Objects:-
+For example, if you wanted to perform more complex mathematical operations than arithmetic, JavaScript has the built-in Math object.
+The great thing about objects is that they have methods! Let’s call the .random() method from the built-in Math object:
+console.log(Math.random()); // Prints a random number between 0 and 1
+
+Variables:-we will cover how to use the var, let, and const keywords to create variables.
+In ES6,two new keywords, let and const, to create, or declare, variables
+Variable names cannot start with numbers.
+Variable names are case sensitive, so myName and myname would be different variables. It is bad practice to create two variables that have the same name using different cases.
+var myName = 'Arya';
+console.log(myName);
+// Output: Arya
+
+Create a Variable: let
+The let keyword signals that the variable can be reassigned a different value.
+let meal = 'Enchiladas';
+console.log(meal); // Output: Enchiladas
+meal = 'Burrito';
+console.log(meal); // Output: Burrito
+
+Another concept that we should be aware of when using let (and even var) is that we can declare a variable without assigning the variable a value. 
+In such a case, the variable will be automatically initialized with a value of undefined:
+
+let price;
+console.log(price); // Output: undefined
+price = 350;
+console.log(price); // Output: 350
+
+Create a Variable: const
+The const keyword was also introduced in ES6, and is short for the word constant. 
+The way you declare a const variable and assign a value to it follows the same structure as let and var. Take a look at the following example:
+const myName = 'Gilberto';
+console.log(myName); // Output: Gilberto
+However, a const variable cannot be reassigned because it is constant. If you try to reassign a const variable, you’ll get a TypeError.
+
+Mathematical Assignment Operators:-
+let w = 4;
+w = w + 1;
+console.log(w); // Output: 5
+let w = 4;
+w += 1;
+console.log(w); // Output: 5
+let x = 20;
+x -= 5; // Can be written as x = x - 5
+console.log(x); // Output: 15
+let y = 50;
+y *= 2; // Can be written as y = y * 2
+console.log(y); // Output: 100
+let z = 8;
+z /= 2; // Can be written as z = z / 2
+console.log(z); // Output: 4
+
+The Increment and Decrement Operator:-
+Other mathematical assignment operators include the increment operator (++) and decrement operator (--).
+The increment operator will increase the value of the variable by 1. The decrement operator will decrease the value of the variable by 1.
+let a = 10;
+a++;
+console.log(a); // Output: 11
+let b = 20;
+b--;
+console.log(b); // Output: 19
+
+String Concatenation with Variables:-
+let myPet = 'armadillo';
+console.log('I own a pet ' + myPet + '.'); 
+// Output: 'I own a pet armadillo.'
+
+String Interpolation:-
+we can insert, or interpolate, variables into strings using template literals.
+const myPet = 'armadillo';
+console.log(`I own a pet ${myPet}.`);
+// Output: I own a pet armadillo.
+Notice that:
+
+a template literal is wrapped by backticks ` (this key is usually located on the top of your keyboard, left of the 1 key).
+Inside the template literal, you’ll see a placeholder, ${myPet}. The value of myPet is inserted into the template literal.
+When we interpolate `I own a pet ${myPet}.`, the output we print is the string: 'I own a pet armadillo.'
+One of the biggest benefits to using template literals is the readability of the code. Using template literals, you can more easily tell what the new string will be. 
+You also don’t have to worry about escaping double quotes or single quotes.
+
+typeof operator:-
+The typeof operator checks the value to its right and returns, or passes back, a string of the data type.
+
+const unknown1 = 'foo';
+console.log(typeof unknown1); // Output: string
+
+const unknown2 = 10;
+console.log(typeof unknown2); // Output: number
+
+const unknown3 = true; 
+console.log(typeof unknown3); // Output: boolean
