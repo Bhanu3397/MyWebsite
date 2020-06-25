@@ -1,0 +1,133 @@
+What is the general purpose of a conditional statement?
+Conditional statements evaluate code as either true or false.
+
+In this lesson, we will explore how programs make decisions by evaluating conditions and introduce logic into our code!
+We’ll be covering the following concepts:
+if, else if, and else statements
+comparison operators
+logical operators
+truthy vs falsy values
+ternary operators
+switch statement
+So if you’re ready to learn these concepts go to the next lesson— else, read over the concepts, observe the diagram, and prepare yourself for this lesson!
+
+If Statement:-
+In programming, we can also perform a task based on a condition using an if statement:
+if (true) {
+  console.log('This message will print!'); 
+}
+// Prints: This message will print!
+Notice in the example above, we have an if statement. The if statement is composed of:
+The if keyword followed by a set of parentheses () which is followed by a code block, or block statement, indicated by a set of curly braces {}.
+Inside the parentheses (), a condition is provided that evaluates to true or false.
+If the condition evaluates to true, the code inside the curly braces {} runs, or executes.
+If the condition evaluates to false, the block won’t execute.
+
+If...Else Statements:-If we wanted to add some default behavior to the if statement, we can add an else statement to run a block of code when the condition evaluates to false. 
+if (false) {
+  console.log('The code in this block will not run.');
+} else {
+  console.log('But the code in this block will!');
+}// Prints: But the code in this block will!
+
+Comparison Operators:-
+When writing conditional statements, sometimes we need to use different types of operators to compare values. These operators are called comparison operators.
+Here is a list of some handy comparison operators and their syntax:
+
+Less than: <
+Greater than: >
+Less than or equal to: <=
+Greater than or equal to: >=
+Is equal to: ===
+Is not equal to: !==
+
+Logical Operators:-Working with conditionals means that we will be using booleans, true or false values.
+JavaScript, there are operators that work with boolean values known as logical operators.
+We can use logical operators to add more sophisticated logic to our conditionals. There are three logical operators:
+the and operator (&&)
+the or operator (||)
+the not operator, otherwise known as the bang operator (!)
+
+The ! not operator reverses, or negates, the value of a boolean:
+let excited = true;
+console.log(!excited); // Prints false
+let sleepy = false;
+console.log(!sleepy); // Prints true
+
+Truthy and Falsy:-
+Let’s consider how non-boolean data types, like strings or numbers, are evaluated when checked inside a condition.
+Sometimes, you’ll want to check if a variable exists and you won’t necessarily want it to equal a specific value — you’ll only check to see if the variable has been assigned a value.
+So which values are falsy— or evaluate to false when checked as a condition? The list of falsy values includes:
+0
+Empty strings like "" or ''
+null which represent when there is no value at all
+undefined which represent when a declared variable lacks a value
+NaN, or Not a Number
+let numberOfApples = 0;
+if (numberOfApples){
+   console.log('Let us eat apples!');
+} else {
+   console.log('No apples left!');
+}// Prints 'No apples left!'
+
+Truthy and Falsy Assignment:-
+"let defaultName;
+if (username) {
+  defaultName = username;
+} else {
+  defaultName = 'Stranger';
+} "
+or in short hand you can write above code in single line
+let defaultName = username || 'Stranger'; If username is not defined then "Stranger" becomes default value.
+
+Ternary Operator:-
+In the spirit of using short-hand syntax, we can use a ternary operator to simplify an if...else statement.
+
+let isNightTime = true;
+if (isNightTime) {
+  console.log('Turn on the lights!');
+} else {
+  console.log('Turn off the lights!');
+}
+We can use a ternary operator to perform the same functionality:
+isNightTime ? console.log('Turn on the lights!') : console.log('Turn off the lights!');
+
+Else If Statements:-We can add more conditions to our if...else with an else if statement.
+The else if statement allows for more than two possible outcomes. You can add as many else if statements as you’d like, to make more complex conditionals!
+
+The switch keyword:-
+n programming, we often find ourselves needing to check multiple values and handling each of them differently. 
+
+Without switch statement:-
+let groceryItem = 'papaya';
+if (groceryItem === 'tomato') {
+  console.log('Tomatoes are $0.49');
+} else if (groceryItem === 'papaya'){
+  console.log('Papayas are $1.29');
+} else {
+  console.log('Invalid item');
+}
+
+with Switch statement:-
+let groceryItem = 'papaya';
+switch (groceryItem) {
+  case 'tomato':
+    console.log('Tomatoes are $0.49');
+    break;
+  case 'lime':
+    console.log('Limes are $1.49');
+    break;
+  case 'papaya':
+    console.log('Papayas are $1.29');
+    break;
+  default:
+    console.log('Invalid item');
+    break;
+}
+The switch keyword initiates the statement and is followed by ( ... ), which contains the value that each case will compare. In the example, the value or expression of the switch statement is groceryItem.
+Inside the block, { ... }, there are multiple cases. The case keyword checks if the expression matches the specified value that comes after it. 
+The value following the first case is 'tomato'. If the value of groceryItem equalled 'tomato', that case‘s console.log() would run.
+The value of groceryItem is 'papaya', so the third case runs— Papayas are $1.29 is logged to the console.
+The break keyword tells the computer to exit the block and not execute any more code or check any other cases inside the code block.
+Note: Without the break keyword at the end of each case, the program would execute the code for all matching cases and the default code as well. This behavior is different from if/else conditional statements which execute only one block of code.
+At the end of each switch statement, there is a default statement. If none of the cases are true, then the code in the default statement will run.
