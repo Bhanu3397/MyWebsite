@@ -132,7 +132,15 @@ const plantNeedsWater = (day) => {
 /*
 const greaterThanFive = (num) => {
   return num > 5 ? true : false;
-}; */
+};
+
+**Which correctly represents the most condensed form of the function? Recall that this syntax is also known as ‘concise body.’
+const areaOfCircle = radius => Math.PI * radius * radius; (Correct one)
+const areaOfCircle = radius => { return Math.PI * radius * radius };
+const areaOfCircle = radius => return Math.PI * radius * radius;
+const areaOfCircle = radius => { Math.PI * radius * radius };
+Correct! Concise body syntax (with one parameter) does not use parentheses, curly braces, or the return keyword.
+*/
 const greaterThanFive = num =>  num > 5 ? true : false;
 console.log(greaterThanFive(4)) //False
 console.log(greaterThanFive(6)) //True
