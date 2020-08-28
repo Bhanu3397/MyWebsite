@@ -1,0 +1,42 @@
+AGGREGATE FUNCTIONS:-Calculations performed on multiple rows of a table are called aggregates.
+COUNT(): count the number of rows
+SUM(): the sum of the values in a column
+MAX()/MIN(): the largest/smallest value
+AVG(): the average of the values in a column
+ROUND(): round the values in the column
+
+Count:- The fastest way to calculate how many rows are in a table is to use the COUNT() function.
+COUNT() is a function that takes the name of a column as an argument and counts the number of non-empty values in that column.
+SELECT COUNT(*) FROM fake_apps WHERE price = 0
+
+Sum:-SQL makes it easy to add all values in a particular column using SUM().
+SUM() is a function that takes the name of a column as an argument and returns the sum of all the values in that column.
+SELECT SUM(downloads) FROM fake_apps;
+
+Max / Min:-The MAX() and MIN() functions return the highest and lowest values in a column, respectively.
+SELECT MAX(price) FROM fake_apps;
+SELECT MIN(downloads) FROM fake_apps;
+
+Average:-SQL uses the AVG() function to quickly calculate the average value of a particular column.
+SELECT AVG(price) FROM fake_apps;
+
+Round:-By default, SQL tries to be as precise as possible without rounding. 
+We can make the result table easier to read using the ROUND() function.
+ROUND() function takes two arguments inside the parenthesis:
+a column name
+an integer
+It rounds the values in the column to the number of decimal places specified by the integer.
+Here, AVG(price) is the 1st argument and 2 is the 2nd argument because we want to round it to two decimal places:
+SELECT ROUND(AVG(price), 2)
+FROM fake_apps;
+
+Group By I:-Oftentimes, we will want to calculate an aggregate for data with certain characteristics.
+SELECT year,
+   AVG(imdb_rating)
+FROM movies
+GROUP BY year
+ORDER BY year;
+GROUP BY is a clause in SQL that is used with aggregate functions. It is used in collaboration with the SELECT statement to arrange identical data into groups.
+The GROUP BY statement comes after any WHERE statements, but before ORDER BY or LIMIT.
+
+Group By II:-

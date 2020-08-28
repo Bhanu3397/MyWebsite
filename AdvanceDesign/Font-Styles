@@ -1,0 +1,81 @@
+The font-weight property can also be assigned a number value to style text on a numeric scale ranging from 100 to 900.
+Valid values are multiples of 100 within this range such as 200 or 500.
+When using numeric weights, there are a number of default font weights that we can use:
+400 is the default font-weight of most text.
+700 signifies a bold font-weight.
+300 signifies a light font-weight.
+
+Font Style
+You can also italicize text with the font-style property.
+
+Word Spacing
+You can also increase the spacing between words in a body of text, technically known as word spacing.
+
+To do so, you can use the word-spacing property:
+h1 {
+  word-spacing: 0.3em;
+}
+
+Letter Spacing
+You’ve learned how to increase the spacing between lines of text and words, but it’s possible to get even more detailed: increasing the spacing between individual letters.
+The technical term for adjusting the spacing between letters is called tracking. Tracking can be adjusted with the letter-spacing property in CSS.
+h1 {
+  letter-spacing: 0.3em;
+}
+
+Text Transformation
+Text can also be styled to appear in either all uppercase or lowercase with the text-transform property.
+
+h1 {
+  text-transform: uppercase;
+}
+
+Text Alignment
+No matter how much styling is applied to text (typeface, size, weight, etc.), text always appears on the left side of the browser.
+
+To move, or align, text, we can use the text-align property.
+h1 {
+  text-align: right;
+}
+
+Line Height Anatomy
+Another property that we can set for text is line-height. This property modifies the leading of text.
+
+Line Height
+We often modify line-height to make text on a web page easier to read. When text is styled to appear larger, the vertical spacing between lines of text can decrease, creating text that is difficult to read, particularly in paragraphs.
+
+Serif — fonts that have extra details on the ends of each letter. Examples include fonts like Times New Roman or Georgia, among others.
+
+Sans-Serif — fonts that do not have extra details on the ends of each letter. Instead, letters have straight, flat edges, like Arial or Helvetica.
+
+Fallback Fonts
+What happens when a stylesheet requires a font that is not installed on a user’s computer? Most computers have a small set of typefaces pre-installed. This small set includes serif fonts like Times New Roman and sans-serif fonts like Arial.
+
+These pre-installed fonts serve as fallback fonts if the stylesheet specifies a font which is not installed on a user’s computer.
+
+To use fallback fonts, the following syntax is required:
+
+h1 {
+  font-family: "Garamond", "Times", serif;
+}
+The CSS rule above says:
+Use the Garamond font for all <h1> elements on the web page.
+If Garamond is not available, use the Times font.
+If Garamond and Times are not available, use any serif font pre-installed on the user’s computer.
+
+Linking Fonts I
+With the number of fonts available with modern typography, it is unrealistic to expect users to have all fonts installed on their computers. New fonts are often centralized in directories made available for public use. We refer to these fonts as non-user fonts.
+
+https://fonts.google.com/ is one such directory of thousands of open-source fonts, available for free use.
+
+Font-Face I
+There are other ways to link non-user fonts that don’t require the use of the <link> tag in the HTML document.
+CSS offers a way to import fonts directly into stylesheets with the @font-face property.
+
+To load fonts with the @font-face property:
+Instead of using the font’s link in the HTML document, enter the link into the URL bar in the browser.
+The browser will load the CSS rules. You will need to focus on the rules that are directly labeled as /* latin */. Some of the latin rules are on separate lines. You will need each of these.
+Copy each of the CSS rules labeled latin, and paste the rules from the browser to the top of style.css.
+
+Font-Face III
+While Google Fonts and other resources can broaden font selection, you may wish to use an entirely different font or abstain from using a font from an external service.
