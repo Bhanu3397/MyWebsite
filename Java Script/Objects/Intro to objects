@@ -1,0 +1,10 @@
+There are only seven fundamental data types in JavaScript, and six of those are the primitive data types: string, number, boolean, null, undefined, and symbol. With the seventh type, objects, we open our code to more complex possibilities. We can use JavaScript objects to model real-world things, like a basketball, or we can use objects to build the data structures that make the web possible.
+
+At their core, JavaScript objects are containers storing related data and functionality, but that deceptively simple task is extremely powerful in practice. 
+
+Creating Object Literals
+Objects can be assigned to variables just like any JavaScript type. We use curly braces, {}, to designate an object literal:
+let fasterShip  ={
+  'Fuel Type':'Turbo Fuel',
+  color: 'silver'};
+

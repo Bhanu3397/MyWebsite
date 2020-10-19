@@ -1,0 +1,26 @@
+HIGHER-ORDER FUNCTIONS
+Functions as Data:-
+JavaScript functions behave like any other data type in the language; we can assign functions to variables, and we can reassign them to new variables.
+
+a callback function is a function passed as an argument into another function.
+
+In JavaScript, functions are first class objects. This means that, like other objects you’ve encountered, JavaScript functions can have properties and methods.
+
+Functions as Parameters:-Since functions can behave like any other type of data in JavaScript, it might not surprise you to learn that we can also pass functions (into other functions) as parameters.
+A higher-order function is a function that either accepts functions as parameters, returns a function, or both!
+Abstraction allows us to write complicated code in a way that’s easy to reuse, debug, and understand for human readers
+We can work with functions the same way we would any other type of data including reassigning them to new variables
+JavaScript functions are first-class objects, so they have properties and methods like any object
+Functions can be passed into other functions as parameters
+A higher-order function is a function that either accepts functions as parameters, returns a function, or both
+
+The .forEach() Method:-
+The return value for .forEach() will always be undefined.
+
+The .map() Method:-When .map() is called on an array, it takes an argument of a callback function and returns a new array!
+
+The .filter() Method:- Like .map(), .filter() returns a new array. However, .filter() returns an array of elements after filtering out certain elements from the original array. 
+
+The .findIndex() Method:-We sometimes want to find the location of an element in an array. That’s where the .findIndex() method comes in! Calling .findIndex() on an array will return the index of the first element that evaluates to true in the callback function.
+
+The .reduce() Method:-Another widely used iteration method is .reduce(). The .reduce() method returns a single value after iterating through the elements of an array, thereby reducing the array. 

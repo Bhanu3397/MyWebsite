@@ -4,25 +4,17 @@ an initialization starts the loop and can also be used to declare the iterator v
 a stopping condition is the condition that the iterator variable is evaluated against— if the condition evaluates to true the code block will run, and if it evaluates to false the code will stop.
 an iteration statement is used to update the iterator variable on each loop.
 
-The for loop syntax looks like this:
-for (let counter = 0; counter < 4; counter++) {
-  console.log(counter);
-}
-Now, make your own! Create a program that loops from 5 to 10 and logs each number to the console.
-for (let count=5; count < 11;count ++){
-  console.log(count)
-}
-
-Looping in Reverse:-
-// The loop below loops from 0 to 3. Edit it to loop backwards from 3 to 0
-for (let count = 3; count >=0; count --){console.log(count)}
-
-Looping through Arrays:-
-const vacationSpots = ['Bali', 'Paris', 'Tulum'];
-// Write your code below
-for (let i = 0; i < vacationSpots.length; i++){
-  console.log('I would love to visit '+vacationSpots[i]);
-}
-
 Nested Loops:-
 When we have a loop running inside another loop, we call that a nested loop. One use for a nested for loop is to compare the elements in two arrays. For each round of the outer for loop, the inner for loop will run completely.
+
+Do...While Statements
+In some cases, you want a piece of code to run at least once and then loop based on a specific condition after its initial run. This is where the do...while statement comes in.
+
+Loops perform repetitive actions so we don’t have to code that process manually every time.
+How to write for loops with an iterator variable that increments or decrements
+How to use a for loop to iterate through an array
+A nested for loop is a loop inside another loop
+while loops allow for different types of stopping conditions
+Stopping conditions are crucial for avoiding infinite loops.
+do...while loops run code at least once— only checking the stopping condition after the first execution
+The break keyword allows programs to leave a loop during the execution of its block
